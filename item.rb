@@ -32,7 +32,7 @@ class Item
 
   private
 
-  def can_be_archived
+  def can_be_archived?
     return true if ((DateTime.now - @publish_date) / 365).to_i > 10
   end
 end

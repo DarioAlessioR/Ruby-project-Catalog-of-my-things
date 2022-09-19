@@ -1,8 +1,8 @@
 class Genre
-  attr_accessor :title, :color, :items 
+  attr_accessor :title, :color
   attr_reader :id
 
-  def initialize(id, name)
+  def initialize(id, title, color)
     @id = id || Random.rand(1..1000)
     @title = title
     @color = color
