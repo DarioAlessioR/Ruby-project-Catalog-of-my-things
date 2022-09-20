@@ -10,8 +10,12 @@ AllCops:
 
   DisplayCopNames: true
 
+Layout/EndOfLine:
+  Enabled: False
 Layout/LineLength:
   Max: 120
+Metrics/ParameterLists:
+  Enabled: false
 Metrics/MethodLength:
   Max: 20
 Metrics/AbcSize:
@@ -21,7 +25,6 @@ Metrics/ClassLength:
 Metrics/BlockLength:
   IgnoredMethods: ['describe']
   Max: 30
-
 
 Style/Documentation:
   Enabled: false
