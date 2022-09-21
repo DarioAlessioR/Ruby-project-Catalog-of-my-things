@@ -1,5 +1,6 @@
 require './add_methods'
 require './list_methods'
+require './data/preserve_data/write_data'
 
 def menu
   puts "\n" * 2
@@ -99,5 +100,6 @@ def exit_from_app
   puts 'Thank you for using the Catalog of Things App.'
   puts "\n" * 2
   sleep(2)
+  write_data
   exit!
 end
