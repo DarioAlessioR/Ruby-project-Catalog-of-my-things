@@ -100,6 +100,6 @@ def exit_from_app
   puts 'Thank you for using the Catalog of Things App.'
   puts "\n" * 2
   sleep(2)
-  write_data
+  write_data(@books, @labels, @music_list, @genres, @authors, @games)
   exit!
 end

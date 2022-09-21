@@ -4,7 +4,7 @@ def list_all_books
     sleep(1)
   else
     @books.each do |book|
-      puts "id: #{book.id} - #{book.label.title}, by #{book.author.first_name} #{book.author.last_name}"
+      puts "id: #{book.id} - #{book.title}, by #{book.author_first_name} #{book.author_last_name}"
     end
     sleep(2)
   end
@@ -17,7 +17,7 @@ def list_all_music_albums
     sleep(1)
   else
     @music_list.each do |album|
-      puts "id: #{album.id} - #{album.label.title}, by #{album.author.first_name} #{album.author.last_name}"
+      puts "id: #{album.id} - #{album.title}, by #{album.author_first_name} #{album.author_last_name}"
     end
     sleep(2)
   end
@@ -30,7 +30,7 @@ def list_all_games
     sleep(1)
   else
     @games.each do |game|
-      puts "id: #{game.id} - #{game.label.title}, by #{game.author.first_name} #{game.author.last_name}"
+      puts "id: #{game.id} - #{game.title}, by #{game.author_first_name} #{game.author_last_name}"
     end
     sleep(2)
   end
