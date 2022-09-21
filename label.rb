@@ -1,9 +1,9 @@
-class Genre
+class Label
   attr_accessor :title, :color
-  attr_reader :id
+  attr_reader :items, :id
 
-  def initialize(id, title, color)
-    @id = id || Random.rand(1..1000)
+  def initialize(title, color, id = Random.rand(1..10_000))
+    @id = id
     @title = title
     @color = color
     @items = []
@@ -11,5 +11,6 @@ class Genre
 
   def add_item(item)
     @items << item unless @items.include?(item)
+    item.add_label(self)
   end
 end
