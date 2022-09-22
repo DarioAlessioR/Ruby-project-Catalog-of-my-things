@@ -20,7 +20,7 @@ def add_a_book_menu
 end
 
 def add_a_book(title, author_first_name, author_last_name, publish_date, publisher, cover_state, label_color, genre)
-  book = Book.new(publish_date, publisher, cover_state)
+  book = Book.new(publish_date, publisher, cover_state, title, author_first_name, author_last_name)
   label = Label.new(title, label_color)
   author = Author.new(author_first_name, author_last_name)
   genre = Genre.new(genre)
@@ -52,7 +52,7 @@ def add_a_music_album_menu
 end
 
 def add_a_music_album(title, author_first_name, author_last_name, publish_date, on_spotify, label_color, genre)
-  album = MusicAlbum.new(publish_date, on_spotify)
+  album = MusicAlbum.new(publish_date, on_spotify, title, author_first_name, author_last_name)
   label = Label.new(title, label_color)
   author = Author.new(author_first_name, author_last_name)
   genre = Genre.new(genre)
@@ -86,7 +86,7 @@ def add_a_game_menu
 end
 
 def add_game(title, author_first_name, author_last_name, publish_date, multiplayer, last_played_at, label_color, genre)
-  game = Game.new(publish_date, multiplayer, last_played_at)
+  game = Game.new(publish_date, multiplayer, last_played_at, title, author_first_name, author_last_name)
   label = Label.new(title, label_color)
   author = Author.new(author_first_name, author_last_name)
   genre = Genre.new(genre)
