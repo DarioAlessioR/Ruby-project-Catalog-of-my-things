@@ -9,7 +9,7 @@ class MusicAlbum < Item
     super(publish_date, id)
     @publish_date = Date.parse(publish_date)
     @id = id
-    @on_spotify = on_spotify == 'true'
+    @on_spotify = on_spotify == 'y'
     @title = title
     @author_first_name = author_first_name
     @author_last_name = author_last_name
@@ -19,7 +19,7 @@ class MusicAlbum < Item
   private
 
   def can_be_archived?
-    return true if super && @on_spotify == true
+    return true if super && @on_spotify == 'y'
 
     false
   end
