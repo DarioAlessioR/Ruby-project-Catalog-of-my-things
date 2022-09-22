@@ -96,6 +96,12 @@ ruby main.rb in the terminal.
 Major languages: Ruby, Postgresql
 Technologies used: VSC, Github, Gitflow, RSpec
 
+## Video presentation:
+
+Please click the following link to watch the video presentation
+
+https://www.loom.com/share/607de9f99904407a9e726ce15bdd8419
+
 ##  Authors
 👤 Author1
 
