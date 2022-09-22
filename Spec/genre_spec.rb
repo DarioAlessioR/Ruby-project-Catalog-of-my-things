@@ -18,7 +18,7 @@ describe Genre do
       @new_genre.add_item(new_item)
       expect(@new_genre.items[0]).to eql new_item
     end
-  
+
     it 'Can adds self as a property of the item object' do
       @new_genre.add_item(new_item)
       expect(new_item.genre).to eql @new_genre

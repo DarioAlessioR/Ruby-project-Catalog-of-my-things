@@ -18,7 +18,7 @@ describe Label do
       @new_label.add_item(new_item)
       expect(@new_label.items[0]).to eql new_item
     end
-  
+
     it 'Can push an item to the @items array 2' do
       @new_label.add_item(new_item)
       expect(@new_label.items.length).to eq 1

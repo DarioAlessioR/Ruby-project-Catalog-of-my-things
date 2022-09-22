@@ -24,6 +24,5 @@ describe Game do
     it 'Should return multiplayer = y' do
       expect(@new_game.multiplayer = 'y').to eql 'y'
     end
-
   end
 end

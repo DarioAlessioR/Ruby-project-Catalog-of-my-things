@@ -19,7 +19,7 @@ describe Author do
       expect(@new_author.items[0]).to eql new_item
       expect(@new_author.items.length).to eq 1
     end
-  
+
     it 'Can push an item to the @items array 2' do
       @new_author.add_item(new_item)
       expect(@new_author.items.length).to eq 1
