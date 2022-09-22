@@ -23,9 +23,9 @@ def load_items(genre, items, books, games, musics)
   objetcs = books + games + musics
   items.each do |item|
     objetcs.each do |object|
-      if object.id == item['item_id'] && object.class.name == item['item_class']
-        genre.add_item(object)
-      end
+      x = item['item_class']
+      y = object.class.name
+      genre.add_item(object) if object.id == item['item_id'] && y == x
     end
   end
 end

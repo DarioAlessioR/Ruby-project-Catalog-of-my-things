@@ -11,7 +11,8 @@ def load_musics
   musics_data = JSON.parse(File.read(file))
 
   musics_data.each do |music|
-    musics.push(MusicAlbum.new(music['publish_date'], music['on_spotify'], music['title'], music['author_first_name'], music['author_last_name'], music['id']))
+    musics.push(MusicAlbum.new(music['publish_date'], music['on_spotify'], music['title'], music['author_first_name'],
+                               music['author_last_name'], music['id']))
   end
 
   musics
