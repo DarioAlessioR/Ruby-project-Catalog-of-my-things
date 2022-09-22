@@ -27,6 +27,8 @@ Create the entities presented in this diagram:
 
 ![](images/uml_diagram.png)
 
+-Database
+The schema.sql file: it has tables analogical to the structure of the app classes. Properties and associations from the parent Item class are added as table columns to all tables based on the child classes.
 
 ## Getting Started
 
