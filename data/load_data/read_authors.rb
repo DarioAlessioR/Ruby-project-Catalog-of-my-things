@@ -11,7 +11,7 @@ def load_authors(books, games, musics)
   authors_data = JSON.parse(File.read(file))
 
   authors_data.each do |author|
-    new_author = Author.new(author['id'], author['first_name'], author['last_name'])
+    new_author = Author.new(author['first_name'], author['last_name'], author['id'])
     load_items(new_author, author['items'], books, games, musics)
     authors.push(new_author)
   end

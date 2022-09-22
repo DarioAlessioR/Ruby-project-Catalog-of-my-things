@@ -4,7 +4,7 @@ require 'date'
 class Game < Item
   attr_accessor :multiplayer, :last_played_at, :title, :author_first_name, :author_last_name
 
-  def initialize(publish_date, multiplayer, last_played_at, id = Random.rand(1..1000), title, author_first_name, author_last_name)
+  def initialize(publish_date, multiplayer, last_played_at, title, author_first_name, author_last_name, id = Random.rand(1..1000))
     super(publish_date, id)
     @title = title
     @author_first_name = author_first_name

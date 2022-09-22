@@ -19,11 +19,13 @@ def load_genres(books, games, musics)
   genres
 end
 
-def load_items(_genres, items, books, games, musics)
+def load_items(genre, items, books, games, musics)
   objetcs = books + games + musics
   items.each do |item|
     objetcs.each do |object|
-      genre.add_item(object) if object.id == item['item_id'] && object.instance_of?(item)
+      if object.id == item['item_id'] && object.class.name == item['item_class']
+        genre.add_item(object)
+      end
     end
   end
 end

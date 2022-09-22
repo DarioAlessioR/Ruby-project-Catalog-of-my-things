@@ -70,7 +70,6 @@ def list_all_authors
   else
     @authors.each_with_index do |author, idx|
       puts "#{idx + 1}) #{author.first_name} #{author.last_name}"
-      p @authors
     end
     sleep(2)
   end
